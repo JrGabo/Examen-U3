@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Examen Unidad 4</title>
+</head>
+<body>
+    <main class="app">
+      <header class="app__header">
+        <h1 class="app__title">Validador</h1>
+        <p class="app__subtitle">
+          Comprueba si un texto cumple con una expresión regular.
+        </p>
+      </header>
+
+      <form class="form" id="regex-form" novalidate>
+        <div class="field">
+          <label class="field__label" for="regex-input">Expresión regular</label>
+          <input
+            class="field__input"
+            id="regex-input"
+            name="regex"
+            type="text"
+           
+            autocomplete="off"
+            spellcheck="false"
+          />
+      
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="text-input">Texto a evaluar</label>
+          <textarea
+            class="field__input field__input--area"
+            id="text-input"
+            name="text"
+            rows="6"
+            placeholder="Escribe aquí el texto que quieres comparar..."
+            spellcheck="false"
+          ></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn--primary" type="submit">Comparar</button>
+          <button class="btn btn--ghost" type="button" id="clear-btn">Limpiar</button>
+        </div>
+      </form>
+
+      <section class="result" id="result" aria-live="polite" hidden>
+        <h2 class="result__title">Resultado</h2>
+        <p class="result__status" id="result-status"></p>
+        <p class="result__detail" id="result-detail"></p>
+        <div class="result__matches" id="result-matches" hidden></div>
+      </section>
+    </main>
+
+    <div class="alerts" id="alerts" aria-live="assertive"></div>
+    <script src="./bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

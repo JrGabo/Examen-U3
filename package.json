@@ -1,0 +1,35 @@
+{
+  "name": "plantilla",
+  "version": "1.0.0",
+  "description": "Plantilla basado en ES",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve --open",
+    "build2": "babel src -d controller --watch"
+  },
+  "author": "Diego",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^8.0.4",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "babel-loader": "^10.1.1",
+    "webpack": "^5.110.2",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "css-loader": "^7.1.5",
+    "i": "^0.3.7",
+    "style-loader": "^4.0.0",
+    "sweetalert2": "^11.26.25"
+  }
+}
